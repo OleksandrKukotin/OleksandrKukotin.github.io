@@ -1,1 +1,53 @@
 /* You can add global styles to this file, and also import other style files */
+
+:root {
+  --cv-light:     #c9e4ca;
+  --cv-sage:      #87bba2;
+  --cv-teal:      #55828b;
+  --cv-dark-teal: #3b6064;
+  --cv-navy:      #364958;
+}
+
+/* Base */
+body {
+  color: var(--cv-navy);
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--cv-navy);
+}
+
+/* Links */
+a {
+  color: var(--cv-teal);
+}
+a:hover {
+  color: var(--cv-dark-teal);
+}
+
+/* Section dividers */
+.border-bottom, .border-top {
+  border-color: var(--cv-light) !important;
+}
+
+/* Muted text → sage */
+.text-muted, .text-secondary {
+  color: var(--cv-sage) !important;
+}
+
+/* Badges */
+.badge.text-bg-light {
+  background-color: var(--cv-light) !important;
+  color: var(--cv-dark-teal) !important;
+  border-color: var(--cv-sage) !important;
+}
+
+/* Cards */
+.card {
+  border-color: var(--cv-light) !important;
+  background-color: #fff;
+}
+.card:hover {
+  box-shadow: 0 2px 14px rgba(54, 73, 88, 0.1);
+}
