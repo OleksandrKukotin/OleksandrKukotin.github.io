@@ -1,0 +1,15 @@
+.ls-wide { letter-spacing: 0.08em; }
+
+.contact-label {
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  width: 70px;
+}
+
+.card {
+  transition: box-shadow 0.15s;
+}
+
+.card:hover {
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
+}
