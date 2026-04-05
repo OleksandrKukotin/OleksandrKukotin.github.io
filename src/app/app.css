@@ -1,15 +1,30 @@
 .ls-wide { letter-spacing: 0.08em; }
 
+/* Navbar */
+.cv-navbar {
+  background-color: #364958;
+}
+.cv-navbar .nav-link {
+  color: rgba(201, 228, 202, 0.8);
+}
+.cv-navbar .nav-link:hover {
+  color: #c9e4ca;
+}
+.cv-navbar .navbar-brand {
+  color: #c9e4ca;
+}
+
+/* Footer */
+.cv-footer {
+  background-color: #364958;
+  color: rgba(201, 228, 202, 0.6);
+  border-top: none;
+}
+
+/* Contact */
 .contact-label {
   font-size: 0.7rem;
   letter-spacing: 0.08em;
   width: 70px;
-}
-
-.card {
-  transition: box-shadow 0.15s;
-}
-
-.card:hover {
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
+  color: #87bba2;
 }
