@@ -21,6 +21,15 @@
   border-top: none;
 }
 
+/* External links */
+.cv-link {
+  color: #364958;
+  text-decoration-color: transparent;
+}
+.cv-link:hover {
+  text-decoration-color: currentColor;
+}
+
 /* Contact */
 .contact-label {
   font-size: 0.7rem;
