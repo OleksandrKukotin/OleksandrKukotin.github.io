@@ -42,36 +42,22 @@
     <div class="container">
       <p class="text-uppercase text-muted small fw-semibold ls-wide mb-4">Education</p>
 
-      <div class="row mb-4">
+      @for (entry of education; track entry.degree) {
+      <div class="row" [class.mb-4]="!$last">
         <div class="col-md-8">
-          <h5 class="fw-semibold mb-1">B.Eng. in Automation and Computer-Integrated Technologies</h5>
-          <p class="text-secondary mb-1">The Bohdan Khmelnytsky National University of Cherkasy</p>
-          <p class="text-muted small">[Optional: thesis topic, specialisation, or honours]</p>
+          <h5 class="fw-semibold mb-1">{{ entry.degree }}</h5>
+          <p class="text-secondary mb-1">{{ entry.institution }}</p>
+          <ul class="list-unstyled d-flex flex-wrap gap-1 mt-1 mb-0" aria-label="Key subjects">
+            @for (subject of entry.subjects; track subject) {
+            <li><span class="badge text-bg-light border">{{ subject }}</span></li>
+            }
+          </ul>
         </div>
         <div class="col-md-4 text-md-end">
-          <span class="text-muted small">2017 – 2021</span>
+          <span class="text-muted small">{{ entry.period }}</span>
         </div>
       </div>
-
-      <div class="row mb-4">
-        <div class="col-md-8">
-          <h5 class="fw-semibold mb-1">MSc in Physics and Astronomy</h5>
-          <p class="text-secondary mb-0">The Bohdan Khmelnytsky National University of Cherkasy</p>
-        </div>
-        <div class="col-md-4 text-md-end">
-          <span class="text-muted small">2021 – 2022</span>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-md-8">
-          <h5 class="fw-semibold mb-1">Java for Web</h5>
-          <p class="text-secondary mb-0">GeekHub, 13th season</p>
-        </div>
-        <div class="col-md-4 text-md-end">
-          <span class="text-muted small">2023.08 – 2024.03</span>
-        </div>
-      </div>
+      }
 
     </div>
   </section>
