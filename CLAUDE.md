@@ -43,6 +43,16 @@ Single-component app — all CV content lives in one component with no routing:
 
 CSS variables are defined in `:root` in `src/styles.css`.
 
+## Tests
+
+`src/app/app.spec.ts` uses Angular `TestBed` with vitest. Run a single test file:
+
+```bash
+npx vitest run src/app/app.spec.ts
+```
+
+Note: the `'should render title'` test checks for `'Hello, portfolio'` in `h1`, which no longer matches the actual heading (`'Oleksandr Kukotin'`). Update the assertion before relying on the test suite.
+
 ## IDE
 
 The project is opened in JetBrains IDE (`.idea/` present). The `.idea/` directory is intentionally untracked by git.
